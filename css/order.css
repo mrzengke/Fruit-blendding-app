@@ -1,0 +1,247 @@
+.zk-flexView {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.zk-navBar {
+	width: 100%;
+    height: 44px;
+    display: flex;
+    z-index: 1002;	
+	position: fixed;
+    background: #f6f6f6;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    float: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.icon-return {
+	margin-top:0.825rem ;
+    background-image: url(../img/zuojiantou.png);
+}
+.zk-center {
+    order: 2;
+    display: flex;
+    height: 44px;
+    width: 50%;
+    margin-left: 25%;
+}
+.zk-center {
+    height: 44px;
+    min-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 0.9rem;
+    display: flex;
+    font-size: 0.7rem;
+    overflow: hidden;
+    color: #808080;
+    position: relative;
+}
+.zk-center-title {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    font-size: 0.95rem;
+    color: #333;
+	line-height: 2.625rem;
+}
+
+
+/* 中间 */
+.zk-scrollView {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    margin-top: 2.55rem;
+    padding-bottom: 65px;
+}
+.tab-nav {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+.tab-nav-item {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    color: #585858;
+    font-size: 0.9rem;
+    display: block;
+    float: left;
+    width: 20%;
+}
+.tab-nav-item.tab-active:before {
+    content: '';
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -35%;
+    z-index: 4;
+    background-color: #ff6143;
+}
+.tab-nav-item.tab-active a {
+    color: #ff1767;
+    font-size: 0.8rem;
+}
+.tab-nav-item a {
+    display: inherit;
+}
+.b-line:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e2e2e2;
+    transform: scaleY(0.5);
+    transform-origin: 0 100%;
+}
+.tab-panel {
+    position: relative;
+    overflow: hidden;
+}
+.tab-panel .tab-panel-item.tab-active {
+    position: relative;
+    transition: transform .15s;
+    transform: translateX(0);
+}
+.tab-panel .tab-panel-item {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+}
+.zk-order-list {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 10px solid #f5f5f5;
+}
+.zk-flex {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+.zk-flex-box {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 0;
+    font-size: 14px;
+    color: #333;
+}
+.zk-order-list .zk-flex-box h3 {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    text-decoration: initial;
+}
+.zk-flex-box h3 {
+    font-weight: normal;
+    padding-bottom: 4px;
+}
+.zk-flex-box h3 {
+    color: #ff1767;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+.zk-order-pay p {
+    color: #ff1767;
+    font-size: 0.8rem;
+}
+.zk-flex-order {
+    background: #f6f6f6;
+    margin: 0 15px;
+    padding: 5px 10px 5px 5px;
+}
+.zk-order-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 0.5rem;
+}
+.zk-order-img img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    border: none;
+}
+.zk-flex-box h2 {
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 0.65rem;
+    height: 2.4rem;
+    overflow: hidden;
+}
+.zk-order-list .zk-flex-order h4 {
+    color: #737373;
+}
+.zk-order-list .zk-flex-order h4 em {
+    font-style: normal;
+    color: #ff1767;
+}
+.zk-flex-button {
+    position: relative;
+    margin-top: 10px;
+    text-align: right;
+}
+.zk-flex-button .zk-order-cancel {
+    background: none;
+    color: #ff1767;
+    border: 1px solid #ff1767;
+}
+.zk-flex-button button {
+    background-color: #ff6143;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    display: inline-block;
+    border: none;
+    padding: 0.28rem 1rem;
+    margin-left: 0.5rem;
+    border: 1px solid #ff1767;
+}
+.zk-flex-button:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 15px;
+    width: 92%;
+    height: 1px;
+    border-top: 1px solid #d2d2d2;
+    transform: scaleY(0.5);
+    transform-origin: 0 0;
+}
+.tab-nav-item a {
+    display: inherit;
+    font-size: 0.8rem;
+    color: #666;
+}
