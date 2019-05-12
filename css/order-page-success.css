@@ -1,0 +1,326 @@
+.zk-flexView {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.zk-navBar {
+	width: 100%;
+    height: 44px;
+    display: flex;
+    z-index: 1002;	
+	position: fixed;
+    background: #f6f6f6;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    float: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.icon-return {
+	margin-top:0.825rem ;
+    background-image: url(../img/zuojiantou.png);
+}
+.zk-center {
+    order: 2;
+    display: flex;
+    height: 44px;
+    width: 50%;
+    margin-left: 25%;
+}
+.zk-center {
+    height: 44px;
+    min-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 0.9rem;
+    display: flex;
+    font-size: 0.7rem;
+    overflow: hidden;
+    color: #808080;
+    position: relative;
+}
+.zk-center-title {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    font-size: 0.95rem;
+    color: #333;
+	line-height: 2.625rem;
+}
+
+
+/* 中间 */
+.zk-scrollView {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 65px;
+	margin-top:2.75rem ;
+}
+.zk-order-page-bg {
+    background: url(../img/head-bg.png) no-repeat left;
+    background-size: cover;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    width: 100%;
+    position: relative;
+}
+.zk-flex {
+    display: flex;
+    padding: 15px;
+    position: relative;
+}
+.zk-flex-box {
+    flex: 1;
+    min-width: 0;
+    font-size: 14px;
+    color: #333;
+}
+.zk-order-page-bg .zk-flex-box h4 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.icon-suc {
+    margin-right: 0.3rem;
+    background-image: url(../img/shouti.png);
+}
+.zk-flex-box .zk-text-no {
+    color: #fff;
+    text-decoration: initial;
+    font-size: 0.8rem;
+    padding-left: 1.5rem;
+}
+.zk-order-page-white {
+    width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #e6e6e6;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    margin-left: -45%;
+}
+.zk-flex-fill {
+    position: relative;
+}
+.zk-flex-fill .zk-flex-box h3 {
+    color: #333333;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+.zk-flex-box h3 {
+    color: #ff1767;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+.icon-adds {
+    background-image: url(../img/icon-ad-001.png);
+    background-size: 17px;
+}
+.zk-flex-fill .zk-flex-box h3 em {
+    color: #333333;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.zk-flex-box h3 em {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.7rem;
+    border: 1px solid #ff95ba;
+    border-radius: 2px;
+    padding: 0 0.2rem;
+    color: #ff95ba;
+    margin-left: 0.3rem;
+}
+.zk-flex-fill .zk-flex-box p {
+    color: #686868;
+    text-decoration: inherit;
+}
+.zk-flex-arrow {
+    text-align: right;
+    color: #808080;
+    padding-right: 13px;
+    position: relative;
+    font-size: 0.8rem;
+}
+.zk-flex-arrow:after {
+    content: " ";
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border-width: 2px 2px 0 0;
+    border-color: #a9a9a9;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 2px;
+}
+.zk-flex-fill:after {
+    background-image: url(../img/icon/line.png);
+    background-size: 50px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    z-index: 0;
+    width: 100%;
+}
+.zk-order-page-list {
+    padding-top: 2.5rem;
+}
+.zk-order-page-list .zk-order-list {
+    border-bottom: 0;
+    margin-bottom: 1rem;
+}
+.zk-order-list {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 10px solid #f5f5f5;
+}
+.zk-order-list .zk-flex-box h3 {
+    width: auto;
+    overflow: hidden;
+    color: #333;
+    text-decoration: initial;
+}
+.zk-flex-order {
+    background: #f6f6f6;
+    margin: 0 15px;
+    padding: 5px 10px 5px 5px;
+}
+.zk-order-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 0.5rem;
+}
+.zk-order-img img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    border: none;
+}
+.zk-flex-box h2 {
+    color: #333;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    overflow: hidden;
+	font-weight: normal;
+    text-overflow: ellipsis;
+    margin-bottom: 0.65rem;
+    height: 2.4rem;
+    overflow: hidden;
+}
+.zk-order-list .zk-flex-order h4 {
+    color: #737373;
+	font-weight: normal;
+    font-size: 0.85rem;
+}
+.zk-order-list .zk-flex-order h4 em {
+    font-style: normal;
+    color: #ff1767;
+}
+.divHeight {
+    width: 100%;
+    height: 10px;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+.zk-fill-region .zk-flex-box h3 {
+    color: #3a3a3a;
+}
+.zk-fill-region-clear .zk-flex-box h3 em {
+    border: none;
+    color: #757575;
+    font-size: 0.8rem;
+}
+.zk-footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 49;
+}
+.zk-footer {
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    padding: 7px 5px 7px 5px;
+    background: #fdfdfd;
+}
+.zk-footer-change {
+    background-color: #ff6143;
+    color: #fff;
+    font-size: 0.85rem;
+    display: block;
+    border: none;
+    padding: 0.8rem 1.8rem;
+}
+.zk-footer-change .zk-tabBar-item {
+    color: #fff;
+    position: relative;
+}
+.zk-tabBar-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #979797;
+}
+.icon-friends {
+    background-image: url(../img/xiaoren.png);
+    position: absolute;
+    left: 16%;
+}
+.zk-footer:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #e4e4e4;
+    transform: scaleY(0.5);
+    transform-origin: 0 100%;
+}
+.zk-order-pay p {
+    color: #ff1767;
+    font-size: 0.8rem;
+}
+.zk-fill-text p {
+    color: #646464;
+    font-size: 0.8rem;
+}
+.zk-fill-region .b-line:after {
+    width: 92%;
+    left: 15px;
+}
+.b-line:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e2e2e2;
+    transform: scaleY(0.5);
+    transform-origin: 0 100%;
+}
