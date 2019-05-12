@@ -1,0 +1,250 @@
+/* 顶部 */
+.zk-navBar {
+	width: 100%;
+    height: 44px;
+	/* position: relative; */
+    display: flex;
+	position: fixed;
+	top: 0;
+    z-index: 100222;
+    background: #f6f6f6;
+}
+.zk-center {
+    order: 2;
+    height: 44px;
+    width: 50%;
+    margin-left: 14%;
+    overflow: hidden;
+    color: #808080;
+    position: relative;
+	display: flex;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    float: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.zk-center-title {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    font-size: 1.06rem;
+    color: #333;
+	line-height: 2.75rem;
+	margin-left:50% ;
+}
+/* 中间 */
+.zk-scrollView {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 65px;
+}
+.zk-member-head {
+    text-align: center;
+    background: url(../img/head-bg.png) no-repeat left;
+    background-size: cover;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+.zk-member-user {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: rgba(255,255,255,0.4);
+    overflow: hidden;
+}
+.zk-member-user img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 100%;
+}
+.zk-member-text {
+    padding-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+.zk-member-text h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+.zk-member-text p {
+    color: #ffe1ed;
+    font-weight: normal;
+    font-size: 0.95rem;
+}
+.zk-flex {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+.zk-flex-box {
+    flex: 1;
+    min-width: 0;
+    font-size: 14px;
+    color: #333;
+}
+.zk-flex-box h4 {
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: #333;
+}
+.zk-flex-arrow {
+    text-align: right;
+    padding-right: 13px;
+    position: relative;
+    font-size: 0.8rem;
+}
+.zk-flex-arrow a{
+	color: #808080;
+}
+.zk-flex-arrow:after {
+    content: " ";
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border-width: 2px 2px 0 0;
+    border-color: #a9a9a9;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 2px;
+}
+.b-line:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e2e2e2;
+    transform: scaleY(0.5);
+    transform-origin: 0 100%;
+}
+.zk-layout {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.zk-layout-item {
+    width: 25%;
+    float: left;
+    position: relative;
+    z-index: 0;
+    padding: 0.32rem 0;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #71777d;
+}
+.zk-layout-icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+.zk-layout-icon img {
+    width: 22px;
+    height: 22px;
+    display: block;
+    border: none;
+}
+.zk-layout-text {
+    color: #2b333b;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+}
+.divHeight {
+    width: 100%;
+    height: 10px;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+.zk-course-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+.zk-course-icon img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+}
+.zk-flex-box h5 {
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #333;
+}
+.zk-flex-tel{
+	font-size: 0.8rem;
+	color: #808080;
+}
+.divHeight {
+    width: 100%;
+    height: 10px;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+/* 底部 */
+.zk-footer {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    padding: 7px 5px 7px 5px;
+    background: #fdfdfd;
+}
+.zk-tabBar-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #979797;
+}
+.zk-footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 49;
+}
+.zk-tabBar-item-text {
+    display: inline-block;
+    font-size: 0.65rem;
+    color: #7d7d7d;
+    padding-top: 2px;
+}
+.icon-collage {
+    background-image: url(../img/pintuan.png);
+}
+.icon-my {
+    background-image: url(../img/wode2.png);
+}
+.icon-home {
+	background-image: url(../img/shouye2.png);
+}
