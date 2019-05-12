@@ -1,0 +1,257 @@
+.zk-flexView {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.zk-navBar {
+	width: 100%;
+    height: 44px;
+    display: flex;
+    z-index: 1002;	
+	position: fixed;
+    background: #f6f6f6;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    float: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.icon-return {
+	margin-top:0.825rem ;
+    background-image: url(../img/zuojiantou.png);
+}
+.zk-center {
+    order: 2;
+    display: flex;
+    height: 44px;
+    width: 50%;
+    margin-left: 25%;
+}
+.zk-center {
+    height: 44px;
+    min-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 0.9rem;
+    display: flex;
+    font-size: 0.7rem;
+    overflow: hidden;
+    color: #808080;
+    position: relative;
+}
+.zk-center-title {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    font-size: 0.95rem;
+    color: #333;
+	line-height: 2.625rem;
+}
+
+/* 中间 */
+.zk-scrollView {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    margin-top: 2.55rem;
+    padding-bottom: 65px;
+}
+.zk-flex-back {
+    background-color: #ff6143;
+    padding: 6px 15px;
+}
+.zk-flex-box {
+    flex: 1;
+    min-width: 0;
+    font-size: 14px;
+    color: #333;
+}
+.zk-flex-box h4 {
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: #333;
+}
+.zk-flex-box-times .icon-time {
+    background-size: 17px;
+}
+.icon-time {
+    margin-right: 0.3rem;
+    background-image: url(../img/shij.png);
+}
+.zk-order-arrow {
+    text-align: right;
+    color: #fff;
+    padding-right: 13px;
+    position: relative;
+    font-size: 0.8rem;
+}
+.zk-order-arrow a {
+    text-align: right;
+    color: #fff;
+    position: relative;
+    font-size: 0.8rem;
+    display: block;
+}
+.zk-order-arrow:after {
+    content: " ";
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border-width: 2px 2px 0 0;
+    border-color: #fff;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 2px;
+}
+.tab-nav {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+.zk-scrollView-my .tab-nav-item {
+    width: 50%;
+}
+.tab-nav-item {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    color: #585858;
+    font-size: 0.9rem;
+    display: block;
+    float: left;
+    width: 20%;
+}
+.zk-scrollView-my .tab-nav-item.tab-active:before {
+    width: 40%;
+    margin-left: -20%;
+}
+.tab-nav-item.tab-active:before {
+    content: '';
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -35%;
+    z-index: 4;
+    background-color: #ff6143;
+}
+.tab-nav-item.tab-active a {
+    color: #ff1767;
+    font-size: 0.8rem;
+}
+.zk-scrollView-my .tab-nav-item {
+    width: 50%;
+}
+.tab-nav-item a {
+    display: inherit;
+    font-size: 0.8rem;
+    color: #666;
+}
+.b-line:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    transform-origin: 0 100%;
+}
+.tab-panel {
+    position: relative;
+    overflow: hidden;
+}
+.tab-panel .tab-panel-item.tab-active {
+    position: relative;
+    transition: transform .15s;
+    transform: translateX(0);
+}
+.tab-panel .tab-panel-item {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+}
+.zk-scrollView-my .zk-order-list {
+    border-bottom: 0;
+    padding-bottom: 15px;
+}
+.zk-order-list {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 10px solid #f5f5f5;
+}
+.zk-flex {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+.zk-order-list .zk-flex-box h3 {
+    width: auto;
+    overflow: hidden;
+    color: #333;
+    text-decoration: initial;
+}
+.zk-flex-box h3 {
+    font-weight: normal;
+    padding-bottom: 4px;
+}
+.zk-order-pay p {
+    color: #ff1767;
+    font-size: 0.8rem;
+}
+.zk-flex-order {
+    background: #f6f6f6;
+    margin: 0 15px;
+    padding: 5px 10px 5px 5px;
+}
+.zk-order-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 0.5rem;
+}
+.zk-order-img img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    border: none;
+}
+.zk-flex-box h2 {
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    margin-bottom: 0.65rem;
+    height: 2.4rem;
+    overflow: hidden;
+}
+.zk-order-list .zk-flex-order h4 {
+    color: #737373;
+}
+
